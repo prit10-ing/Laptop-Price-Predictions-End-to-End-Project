@@ -25,7 +25,7 @@ Thumbs.db
 # Environment files
 .mynewenv/
 mynewenv
-env
+.env
 
 # Jupyter
 .ipynb_checkpoints/
