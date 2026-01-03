@@ -1,48 +1,38 @@
-# Python
+# ================= Python =================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.egg-info/
+
+# ================= Virtual Environments =================
 venv/
 env/
+.mynewenv/
+mynewenv/
 
-# IDE
+# ================= Environment Files =================
+.env
+
+# ================= IDE =================
 .vscode/
 .idea/
 
-# Logs and outputs
+# ================= Logs =================
 logs/
 *.log
+
+# ================= ML Artifacts =================
 artifacts/
 prediction/models/
-notebooks/.ipynb_checkpoints/
-
-# OS-specific
-.DS_Store
-Thumbs.db
-
-# Environment files
-.mynewenv/
-mynewenv
-.env
-
-# Jupyter
-.ipynb_checkpoints/
-
-
-
-env/
-__pycache__/
-*.ipynb
-logs/
-artifacts/raw/
-artifacts/unseen_test/
-artifacts/transformed/train.csv
-artifacts/transformed/test.csv
 prediction/models/archive/
 
-Dockerfile
-.dockerignore
+# ================= Jupyter =================
+.ipynb_checkpoints/
 
-notebook
+# Uncomment ONLY if you don't want notebooks on GitHub
+# *.ipynb
+
+# ================= OS =================
+.DS_Store
+Thumbs.db
