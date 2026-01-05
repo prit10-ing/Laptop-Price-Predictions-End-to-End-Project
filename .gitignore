@@ -22,10 +22,6 @@ mynewenv/
 logs/
 *.log
 
-# ================= ML Artifacts =================
-artifacts/
-prediction/models/
-prediction/models/archive/
 
 # ================= Jupyter =================
 .ipynb_checkpoints/

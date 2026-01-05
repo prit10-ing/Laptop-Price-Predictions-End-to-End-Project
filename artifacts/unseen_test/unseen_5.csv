@@ -1,0 +1,6 @@
+SKU,Brand,Model,CPU,RAM,Primary_Storage,Secondary_Storage,GPU,Screen_Size,Resolution,Weight_kg,OS,Type,Battery_Hours,Touchscreen
+UNSEE001,Lenovo,IdeaX1,Intel Core i5,8,256,0,Integrated,14.0,1920x1080,1.4,Windows 11,Ultrabook,8,No
+UNSEE002,Dell,NewG15,Intel Core i7,16,512,0,NVIDIA GTX 1650,15.6,1920x1080,2.1,Windows 11,Gaming,6,No
+UNSEE003,HP,FreshPro,AMD Ryzen 5,8,512,0,Integrated,14.0,1366x768,1.6,Windows 10,Notebook,7,Yes
+UNSEE004,Acer,SwiftZ,Intel Core i3,4,128,0,Integrated,13.3,1366x768,1.1,Windows 11,Netbook,10,No
+UNSEE005,Asus,ZenBookX,Intel Core i7,32,1024,0,NVIDIA RTX 3050,15.6,2560x1440,1.7,Windows 11,Ultrabook,9,Yes
