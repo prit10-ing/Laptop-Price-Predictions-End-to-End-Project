@@ -1,14 +1,9 @@
-
-
 from flask import Flask, render_template, request, send_file
 import pandas as pd
 import joblib
 import json
 from pathlib import Path
 import io
-import webbrowser
-import threading
-import os
 
 # ================= APP INIT =================
 app = Flask(__name__)
@@ -31,7 +26,6 @@ with open(FEATURE_LIST_PATH, "r") as f:
 
 NUM_COLS = feature_data["num_cols"]
 CAT_COLS = feature_data["cat_cols"]
-FEATURES = NUM_COLS + CAT_COLS
 
 # ================= LOAD DROPDOWN VALUES =================
 train_df = pd.read_csv(TRAIN_CSV_PATH)
@@ -55,16 +49,13 @@ def home():
 def predict():
     input_data = {}
 
-    # numeric inputs
     for col in NUM_COLS:
         input_data[col] = float(request.form[col])
 
-    # categorical inputs
     for col in CAT_COLS:
         input_data[col] = request.form[col]
 
     df = pd.DataFrame([input_data])
-
     X_transformed = preprocessor.transform(df)
     prediction = model.predict(X_transformed)[0]
 
@@ -97,11 +88,6 @@ def batch_predict():
         download_name="batch_predictions.csv"
     )
 
-# ================= AUTO OPEN BROWSER =================
-def open_browser():
-    webbrowser.open_new("http://127.0.0.1:5000")
-
 # ================= MAIN =================
 if __name__ == "__main__":
-    threading.Timer(1.0, open_browser).start()
-    app.run(debug=True, use_reloader=False)
+    app.run(host="0.0.0.0", port=5000)

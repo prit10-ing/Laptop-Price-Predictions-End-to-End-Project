@@ -9,4 +9,8 @@ flask
 notebook
 python-dotenv
 streamlit
+<<<<<<< HEAD
 gunicorn
+=======
+gunicorn
+>>>>>>> 9414d5898e40ecaf85c8c0683f83ff2f256dd20b

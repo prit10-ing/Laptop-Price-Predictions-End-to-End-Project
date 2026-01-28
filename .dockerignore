@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pkl
+*.joblib
+*.csv
+*.zip
+*.tar
+*.log
+.env
+.git
+.vscode
+notebooks/
+data/
